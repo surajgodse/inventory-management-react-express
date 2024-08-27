@@ -1,0 +1,251 @@
+/* General Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Navbar Styles */
+.nav {
+  background-color: #4CAF50;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s, background-color 0.3s, padding 0.3s;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  color: #4CAF50;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+/* Main Container Styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content Styles */
+.content {
+  flex: 1;
+}
+
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px -10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Home Page Styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: calc(33% - 40px);
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  margin: 0;
+  color: #333;
+}
+
+.product p {
+  color: #777;
+  margin: 5px 0;
+}
+
+.product a, .product button {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.product a:hover, .product button:hover {
+  color: #45a049;
+  transform: scale(1.1);
+}
+
+.product button {
+  color: #f44336;
+}
+
+.product button:hover {
+  color: #d32f2f;
+}
+
+/* FilterProducts Styles */
+.filters {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filters ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.filters li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.filters li:hover {
+  background-color: #f4f4f4;
+}
+
+.filters button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.filters button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-icons {
+  margin-top: 5px;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s;
+  margin-top: 10px;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Toast Styles */
+.Toastify__toast--success {
+  background-color: #ebf2ee; /* Change to a darker green to differentiate from navbar */
+}
+
+.Toastify__toast--error {
+  background-color: #f8f0f0;
+}
+
+/* Toast Close Button Styles */
+.Toastify__close-button {
+  color: white;
+}
